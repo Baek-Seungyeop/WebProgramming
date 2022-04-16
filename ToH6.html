@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--파일의 인코딩을 UTF-8로 할게요.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE는 인터넷 익스플로러 버전차이로 인해 같은 웹 문서라해도 다르게 보임, 각 버전 중 가장 최신 표준 모드를 선택하는 문서 모드-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport는 브라우저에게 해당 페이지의 면적과 비율 등을 어떻게 제어할 지에 대한 지침을 제공합니다. 따라서 다음과 같은 <meta> 요소를 모든 웹 페이지에 삽입해야만 여러분의 웹 페이지가 모든 장치에서 잘 보이게 될 것입니다.-->
+    <title>Document</title>
+    <style>
+        ul {
+          list-style-type: none; /*리스트 스타일 설정, 동그라미, 숫자 등*/        margin: 0;
+          padding: 0;
+          overflow: hidden; /*요소내의 컨텐츠가 커서 모두 보여주기 힘들 때 어떻게 보여줄지 지장 */
+          border: 1px solid #e7e7e7;
+          background-color: #f3f3f3;
+        }
+        li {
+          float: left; /* 해당 요소를 어떻게 정렬할지 정의 */
+        }
+        
+        li a {
+          display: block; /* 요소 크기를 어떻게 결정할건가 */
+          color: #666;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration:none; /* 텍스트를 어떻게 꾸밀 것인가 */
+        }
+        li a:hover:not(.active) { /* 마우스 커서일 때의 반응*/
+          background-color: #ddd;
+        }
+        
+        li a.active { /* 동작했을 때의 반응 */
+          color: white;
+          background-color: #04AA6D;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li> <!--#이 있으면 현재페이지에서 해당 id를 가지고 있는 요소를 찾아서 이동-->
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Abot">About</a></li>
+    </ul>
+    
+    <br><br>
+    
+    <a href='./1.png' target=_blank><img src='./1.png' width=200px></img></a> <!--새창에서 링크 열기-->
+    <a href='./2.png' target=_blank><img src='./2.png' width=200px></img></a>
+    <a href='./3.png' target=_blank><img src='./3.png' width=200px></img></a>
+    
+    <br><br>
+    <p><b>20183198 백승엽</b></p>
+    <p>학습한 내용~~?</p>
+    <p>어쩌구 저쩌구~~</p>       
+</body>
+</html>
